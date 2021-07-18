@@ -45,34 +45,5 @@ int main(){
     for (int ii = 0; ii < n; ii++){
     std::cout << sArray[ii] << " " << std::endl;
     }
-    int H = 0;
-    while(H++){
-        std::cout << H << std::endl;
-        vector<int> sSum(n);
-        int sum2;
-        for(int iii = 0; iii < n; iii++)
-        {
-            sSum[iii] = (tArray[iii] * H) + sArray[iii];
-        }
-        for(int iv = 0; iv < n; iv++)
-        {
-            if(sSum[iv] == sSum[iv+1]){
-                sum2++;
-            }
-        }
-        if(sum2 == (n-1)){
-            solan++;
-        }
-        if(H > 10) break;
-    }
-    std::cout << solan << std::endl;
-
-    // int H = 86400;
-    // while(H--)
-    // {
-    //     for(int iii = 0; iii < n; iii++){
-    //         if(H*tArray[iii] == H)
-    //     }
-    // }
     return 0;
 }
